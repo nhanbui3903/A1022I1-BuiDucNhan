@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo 1 cv cá nhân</title>
+</head>
+<body>
+<p>Tạo một trang CV cá nhân bao gồm các thông tin </p>
+<ul>
+  <li>họ và tên:Bùi Đức Nhân</li>
+  <li>địa chỉ:49 Lê Đình thám</li>
+  <li>sđth:0934927324</li>
+  <li>email:ducnhan3903@gamil.com</li>
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Finkythuatso.com%2Fhinh-anh-dep%2Fanh-kevin-de-bruyne-4k-3616.html&psig=AOvVaw2umVd-rUwo13C6HNtSnceN&ust=1668002467318000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKjkqcbfnvsCFQAAAAAdAAAAABAJ">
+  <li>học vấn: sinh viên</li>
+  <li>bằng cấp:đã tốt nghiệp thpt</li>
+  <li>kỹ năng:cần cù ,siêng năng</li>
+  <li>kinh nghiệm : chưa có</li>
+  <li>định hướng phát triển cá nhân: trở thành 1 lập trình viên</li>
+  <a href="https://www.facebook.com/ducnhan3903/">Visit facebook.com</a>
+</ul>
+</body>
+</html>
