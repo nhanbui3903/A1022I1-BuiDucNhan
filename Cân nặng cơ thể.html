@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng BMI</title>
+</head>
+<body>
+<button onclick="calBMI()">Nhập zô</button>
+</body>
+<script>
+    function calBMI(){
+        let height = +prompt("Nhập vào chiều cao của bạn(m) là:");
+        let weight = +prompt("Nhập vào cân nặng của bạn(kg) là :");
+        let BMI = weight / (Math.pow(height,2));
+        if(BMI < 18){
+            alert("Underweight");
+        }else if(BMI < 25){
+            alert("Normal");
+        }else if(BMI < 30){
+            alert("Overweight");
+        }else{
+            alert("Obese");
+        }
+    }
+</script>
+</html>
