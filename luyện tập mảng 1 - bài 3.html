@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số lớn nhất và vị trị của số đó</title>
+</head>
+<body>
+</body>
+<script>
+    let arr=[3,5,11,23,54,22,44,11,22,44];
+  let solonnhat = arr[0];
+  let sumArr = 0;
+  let tb = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sumArr += arr[i];
+    if (solonnhat < arr[i]){
+      solonnhat = arr[i];
+    }
+  }
+    tb = sumArr / arr.length;
+  alert("Giá trị lớn nhất trong mảng là: " + solonnhat );
+  alert("Giá trị trung bình của các phần tử là: " + tb);
+</script>
+</html>
