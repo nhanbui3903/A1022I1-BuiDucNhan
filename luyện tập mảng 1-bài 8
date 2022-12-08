@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+    let result;
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        let max = arr[0];
+        for (let j = 1; j < arr.length; j++) {
+            if (max < arr[j]) {
+                max = arr[j];
+            }
+        }
+        index = arr.indexOf(max);
+        result = arr.splice(index, 1);
+        console.log(result + "<br/>")
+    }
+</script>
+</html>
