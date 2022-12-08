@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập số nguyên index ${i}: , "Stop để dừng vòng lặp"`);
+        if (number === "Stop") {
+            break;
+        }
+        arr.push(+number);
+    }
+    console.log(`Mảng ban đầu: ${arr} \nMảng đảo ngược: ${arr.reverse()}`);
+</script>
+</html>
