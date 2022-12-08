@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    let index;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+    let v = +prompt("Nhập số nguyên V: ");
+    if (arr.includes(v)) {
+        index = arr.indexOf(v);
+        arr.splice(index, 1);
+        arr.push(0);
+        console.log(`${v} có trong mảng \nMảng mới là: ${arr}`)
+    } else {
+        console.log(`${v} không có trong mảng`);
+    }
+</script>
+</html>
