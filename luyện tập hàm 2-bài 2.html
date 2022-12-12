@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const PI = 3.14;
+    function tinhdientich(R){
+        let S = R*R*PI;
+        return S;
+    }
+    function tinhchuvi(R){
+        let C = R*2*PI;
+        return C;
+    }
+    let R = +prompt("mời nhập vào bán kính:")
+
+    document.write("chu vi của hình tròn là:" +tinhchuvi(R) +"<br>" + "diện tích của hình tròn là:" +tinhdientich(R))
+
+
+</script>
+</body>
+</html>
