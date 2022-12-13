@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swap(a,b) {
+        alert("trước khi hoán vị: "+ a + ","+ b );
+        let num = a;
+        a = b;
+        b = num;
+        alert("sau khi hoán vị: " + a + "," + b);
+    }
+    let so1 = +prompt("Mời nhập số thứ 1");
+    let so2 = +prompt("Mời nhập số thứ 2");
+    swap(so1,so2);
+</script>
+</body>
+</html>
