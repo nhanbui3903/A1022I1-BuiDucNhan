@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nguyenduong(number) {
+        let flag = false
+        if (Number.isInteger(number) && number > 0){
+            return true
+        }
+        return flag;
+
+    }
+    let num = +prompt("mời nhập số nguyên");
+    let result = nguyenduong(num);
+    alert(result);
+</script>
+</body>
+</html>
