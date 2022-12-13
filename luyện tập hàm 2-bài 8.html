@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dodai = +prompt("Nhập độ dài mảng");
+    let array = [];
+    for (let i=0; i<dodai; i++){
+        array[i]= +prompt("nhập số thứ "+i);
+    }
+    function daoMang(arr) {
+        let first = 0;
+        let last = arr.length - 1;
+        while (first < last) {
+            let b = arr[first];
+            arr[first] = arr[last];
+            arr[last] = b;
+            first++;
+            last--;
+        }
+        alert(arr);
+    }
+    daoMang(array);
+</script>
+</body>
+</html>
