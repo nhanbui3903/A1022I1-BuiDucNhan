@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    Bài5
+    function minNum(a,b,c) {
+        let min;
+        if (a<b && a<c){
+            min = a;
+        }else if (b<a && b<c){
+            min = b;
+        }else {
+            min =c;
+        }
+        return min;
+    }
+    let number1 = +prompt("nhập số thứ 1");
+    let number2 = +prompt("nhập số thứ 2");
+    let number3 = +prompt("nhập số thứ 3");
+    let result = minNum(number1,number2,number3);
+    document.write("số nhỏ nhất trong 3 số là: " + result);
+</script>
+</body>
+</html>
