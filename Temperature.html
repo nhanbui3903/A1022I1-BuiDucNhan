@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+    class Temperature{
+        constructor(c) {
+            this.c = c
+        }
+        getF(){
+            return this.c * 9/5+32;
+            }
+        getK(){
+                return this.c+ 273.15;
+            }
+    }
+    let a =+prompt("Moi nhap nhiet do vao:")
+    let c = new Temperature(a)
+    document.write("Nhiệt độ chuyển từ C sang F là:" + c.getF() + "<br>")
+    document.write("Nhiệt độ chuyển từ C sang K là:" + c.getK())
+</script>
+</html>
