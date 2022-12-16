@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich + chu vi</title>
+</head>
+<body>
+</body>
+<script>
+  class Hinhchunhat {
+    constructor(length, width) {
+      this.length = length;
+      this.width = width;
+    }
+      getDientich(){
+          return this.length * this.width;
+      }
+      getChuvi(){
+          return (this.length + this.width) * 2;
+      }
+  }
+  let hinhchunhat = new Hinhchunhat(10, 7);
+  document.write("Dien tich cua hinh chu nhat la:" + hinhchunhat.getDientich() +"<br>")
+  document.write("Chu vi cua hinh chu nhat la:" + hinhchunhat.getChuvi())
+
+</script>
+</html>
