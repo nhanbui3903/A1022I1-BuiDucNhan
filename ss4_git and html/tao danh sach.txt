@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>HTML LINKS</title>
+</head>
+<body>
+<p>việt nam</p>
+<ol>
+    <li>hà nội</li>
+    <li>sài gòn</li>
+    <li>huế</li>
+    <li>đà nẵng</li>
+</ol>
+<p>hoa kỳ</p>
+<ol>
+    <li>new york</li>
+    <li>los angeles</li>
+    <li>chicago</li>
+    <li>houston</li>
+</ol>
+<p>trung quốc</p>
+<ol>
+    <li>beijing</li>
+    <li>chongqing</li>
+    <li>shanghai</li>
+    <li>tianjin</li>
+</ol>
+</body>
+</html>
