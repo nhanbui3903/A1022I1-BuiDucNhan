@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cơ thể</title>
+</head>
+<body>
+</body>
+<script>
+    let a = +prompt("Mời nhập cân nặng của bạn:(kg)");
+    let b = +prompt("Mời nhập chiều cao của bạn:(m)");
+    let c = a/ (b*b);
+    if (c < 18.5) {
+        alert("Underweight");
+    } else if (c < 25.0)
+        alert("Normal");
+    else if (c < 30.0)
+        alert("Overweight");
+    else
+        alert("Obese")
+</script>
+</html>
