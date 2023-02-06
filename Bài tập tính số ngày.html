@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số ngày</title>
+</head>
+<body>
+<input type="number" id="number">
+<button onclick="abc()" type="button"> Tính số ngày</button>
+<p id="result"></p>
+</body>
+<script>
+    function abc() {
+        let number = +document.getElementById("number").value;
+        switch (number) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+            {
+                document.getElementById("result").innerHTML = "Tháng có 31 ngày";
+                break;
+            }
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+            {
+                document.getElementById("result").innerHTML = " Tháng có 30 ngày"
+                break;
+            }
+            case 2:
+            {
+                document.getElementById("result").innerHTML = " Tháng có 28 hoặc 29 ngày"
+                break;
+            }
+            default: {
+                document.getElementById("result").innerHTML = " Bạn đã nhập sai tháng, mời nhập lại!"
+            }
+        }
+
+    }
+
+</script>
+</html>
