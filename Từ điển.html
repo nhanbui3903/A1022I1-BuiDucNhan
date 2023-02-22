@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<label> <input type="text" id="giatri1" placeholder="Nhập từ cần tra">  </label>
+<label> <input type="button" value="Tra cứu"  onclick="dosth()" >  </label>
+<p id="giatri2"> </p>
+</body>
+<script>
+    let VN = ["Xe máy","ô tô", "xe đạp", "máy bay"];
+    let ENG = ["moto bike", "bike", "car", 'plane'];
+    function dosth(){
+        let arry = document.getElementById('giatri1').value;
+        let a = VN.indexOf(arry);
+        document.getElementById('giatri2').innerHTML = ENG[a]}
+</script>
+</html>
