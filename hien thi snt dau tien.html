@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra snt</title>
+</head>
+<body>
+<script>
+  let number = +prompt("Nhập số :");
+  let count = 0;
+  let flat = true;
+  if (!isNaN(number)) {
+    for(let i = 2;true;i++){
+      if (count ===number) {
+        break;
+      }
+      for(let j = 2;j<i;j++){
+        if (i%j===0) {
+          flat = false;
+          break;
+
+        }
+      }
+      if (flat) {
+        document.write(i +"<br>")
+        count ++;
+      }else {
+        flat = true;
+      }
+    }
+  }
+  
+</script>
+</body>
+</html>
