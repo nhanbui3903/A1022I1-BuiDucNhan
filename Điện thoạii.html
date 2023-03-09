@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điện thoại</title>
+</head>
+<body>
+<script>
+    let c;
+  class Moblie{
+    constructor(name,pin) {
+        this.pin = pin;
+        this.name = name;
+      // this.trangthai= trangthai;
+      // this.tinnhan=tinnhan;
+    }
+   pIn(){
+        if(this.pin<=10){
+            alert("Mời sạc pin" + this.name);
+        }
+
+
+    }kiemTra(){
+          if (this.pin>10){
+              alert("Điện thoại"+this.name+ "đang hoạt động với số pin là:" + this.pin+"%")
+          }else{
+              alert("Điện thoại"+this.name + "đang tắt");
+          }
+      }
+      guiTinNhan(){
+           c = prompt("Mời nhập vào")
+
+      }
+      hienTinnhan(){
+        document.write(c)
+      }
+  }
+  let a =+prompt("Mời nhập vào số pin của iphone")
+  let b =+prompt("Mời nhập vào số pin của nokia")
+  let iphone=new Moblie("iphone",a);
+  let nokia = new Moblie("nokia",b);
+  iphone.pIn();
+  nokia.pIn();
+  // iphone.kiemTra();
+  // nokia.kiemTra();
+  nokia.guiTinNhan()
+  alert("Tin nhắn đã được gửi");
+  iphone.hienTinnhan()
+
+  // phone.batDt();
+  // phone.kiemtraDt();
+  // phone.tatDt();
+  // phone.kiemtraDt();
+</script>
+
+</body>
+</html>
