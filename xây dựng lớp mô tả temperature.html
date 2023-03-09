@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c =+prompt("Mời nhập:")
+    if (c>-273){
+        // document.write("Độ F hiện tại là:" + a + "<br>");
+        // document.write("Độ Kenvin hiện tại là:" + b);
+    }else {
+        alert("Mời nhập lại nhiệt độ lớn hơn -273");
+    }
+
+  class Temperature {
+  constructor(C) {
+    this.c = C;
+  }
+
+  doF() {
+    let a= this.c*32+9.5;
+    document.write("Độ F hiện tại là:" + a + "<br>");
+  }doKenvin() {
+    let b = this.c+273.15;
+    document.write("Độ Kenvin hiện tại là:" + b);
+  }
+}
+let temperature = new Temperature(c);
+temperature.doF();
+temperature.doKenvin()
+</script>
+</body>
+</html>
