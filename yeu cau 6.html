@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<button onclick="addSv()">them sinh vien</button>
+<button onclick="deleteSv()">xoa sinh vien</button>
+<button onclick="fixSv()">sua sinh vien</button>
+<p id="hienThi"></p>
+<script>
+class Sv{
+constructor(maSv, ten,lop,email,ngaysinh) {
+this.msv = maSv;
+this.name = ten;
+this.class= lop;
+this.email = email;
+this.ngaysinh= ngaysinh;
+}
+setName(newName){
+this.name=newName;
+}
+setClass(newClass){
+this.class=newClass;
+}
+setEmail(newEmail){
+this.email=newEmail;
+}
+setNgaySinh(newNgaySinh){
+this.ngaysinh=newNgaySinh;
+}
+getMsv(){
+return this.msv;
+}getClass(){
+return this.class;
+}getEmail(){
+return this.email;
+}getNgaysinh(){
+return this.ngaysinh;
+}getName(){
+return this.name;
+}
+}
+let sv1 = new Sv("HV-001","Nguyễn Văn A","C1022G1","nguyenvana@gmail.com","01/01/2004");
+let sv2 = new Sv("HV-002","Nguyễn Văn B","C1022G1","nguyenvanb@gmail.com","02/01/2004");
+let sv3 = new Sv("HV-003","Nguyễn Văn C","C1022G1","nguyenvanc@gmail.com","03/01/2004");
+let ds = [sv1,sv2,sv3];
+showInfo(ds);
+
+function showInfo(danhSach) {
+let table = '<table border="1">\n' +
+  '    <tr>\n' +
+    '        <th>Msv</th>\n' +
+    '        <th>Họ Và Tên</th>\n' +
+    '        <th>class</th>\n' +
+    '        <th>email</th>\n' +
+    '        <th>ngaysinh</th>\n' +
+    '    </tr>';
+  for (let i = 0; i < danhSach.length; i++) {
+  table += '<tr>\n' +
+    '        <td>' + danhSach[i].getMsv() + '</td>\n' +
+    '        <td>' + danhSach[i].getName() + '</td>\n' +
+    '        <td>' + danhSach[i].getClass() + '</td>\n' +
+    '        <td>' + danhSach[i].getEmail() + '</td>\n' +
+    '        <td>' + danhSach[i].getNgaysinh() + '</td>\n' +
+    '    </tr>';
+  }
+  table += '</table>';
+document.getElementById("hienThi").innerHTML = table;
+}
+
+function addSv() {
+let msv = prompt("nhập mã sinh viên");
+let ten = prompt("nhâp tên sinh viên");
+let lop = prompt("nhập lớp sinh viên");
+let email = prompt("nhập email");
+let birthDay = prompt("nhập ngày sinh");
+let svA = new Sv(msv,ten,lop,email,birthDay);
+ds.push(svA);
+showInfo(ds);
+}
+
+function deleteSv() {
+let xoa = prompt("nhập mã sinh viên muốn xóa");
+let check =false;
+for (i =0; i<ds.length;i++){
+if (xoa===ds[i].msv){
+let choice = confirm("bạn có chắc chắn muốn xóa?");
+if (choice===true){
+ds.splice(i,1);
+
+}else {
+alert("bạn đã hủy lệnh xóa");
+}
+check =true;
+}
+}
+if(!check){
+alert("không có sinh viên "+xoa);
+}
+showInfo(ds);
+}
+
+function fixSv() {
+let sua = prompt("nhập mã sinh viên cần sửa chữa");
+let check = false;
+for (let i=0; i<ds.length; i++){
+if (sua===ds[i].msv) {
+let a = prompt("nhập lại tên của sinh viên " + sua);
+ds[i].setName(a);
+let b = prompt("nhập lại lớp của sinh viên " + sua);
+ds[i].setClass(b);
+let c = prompt("nhập lại email của sinh viên " + sua);
+ds[i].setEmail(c);
+let d = prompt("nhập lại ngày sinh của sinh viên " + sua);
+ds[i].setNgaySinh(d);
+check = true;
+}
+}
+if (!check){
+alert("không có sinh viên "+sua);
+}
+showInfo(ds);
+}
+</script>
+<body>
+
+</body>
+</html>
