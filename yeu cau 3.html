@@ -41,18 +41,7 @@
 <!--  &lt;!&ndash;// }&ndash;&gt;-->
 <!--&lt;!&ndash;</script>&ndash;&gt;-->
 <!--&lt;!&ndash;</script>&ndash;&gt;-->
-<!--&lt;!&ndash;<form>&ndash;&gt;-->
-<!--&lt;!&ndash;    <fieldset style="width: 140px" >&ndash;&gt;-->
-<!--&lt;!&ndash;        <legend><h>MENU</h></legend>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose()">1.Cafe</button><br>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose2()">2.Cam vắt</button>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose3()">3.Nước ép cà rốt</button>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose4()">4.Nước ép cà chua</button>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose5()">5.Nước lọc</button>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose6()">6.Nước dừa</button>&ndash;&gt;-->
-<!--&lt;!&ndash;        <button onclick="choose7()">7.Thoát gọi món</button>&ndash;&gt;-->
-<!--&lt;!&ndash;        <p id="result"></p>&ndash;&gt;-->
-<!--&lt;!&ndash;    </fieldset>&ndash;&gt;-->
+
 <!--// Bai 3-->
 <!--<script>-->
 <!--    let tuSo=[8,3,9];-->
@@ -70,39 +59,54 @@
 <!--    }document.write("Phân số lớn nhất là:" + max  +" Tại vị trí: " +viTri)-->
 <!--</script>-->
 <!--// Bai 4-->
-<!--&lt;!&ndash;</form>&ndash;&gt;-->
-<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<form>
+    <fieldset style="width: 140px" >
+        <legend><h>MENU</h></legend>
+        <button onclick="order()">Gọi nước</button><br>
+        <button onclick="choose()">1.Cafe</button><br>
+        <button onclick="choose2()">2.Cam vắt</button>
+        <button onclick="choose3()">3.Nước ép cà rốt</button>
+        <button onclick="choose4()">4.Nước ép cà chua</button>
+        <button onclick="choose5()">5.Nước lọc</button>
+        <button onclick="choose6()">6.Nước dừa</button>
+        <button onclick="choose7()">7.Thoát gọi món</button>
+        <p id="result"></p>
+    </fieldset>
+</form>
+<script>
+    function order(){
 
-<!--&lt;!&ndash;    let goimon = +prompt("Mời nhập số nước cần gọi")&ndash;&gt;-->
-<!--&lt;!&ndash;    let soluong = +prompt("Mời nhập ố lượng")&ndash;&gt;-->
-<!--&lt;!&ndash;    switch (goimon) {&ndash;&gt;-->
-<!--&lt;!&ndash;        case 1 :{&ndash;&gt;-->
-<!--&lt;!&ndash;            let a= soluong*15000&ndash;&gt;-->
-<!--&lt;!&ndash;            alert("Cafe"+ "Giá tiền là:"+ a);&ndash;&gt;-->
-<!--&lt;!&ndash;            break;&ndash;&gt;-->
-<!--&lt;!&ndash;        }case 2 :{&ndash;&gt;-->
-<!--&lt;!&ndash;            let b= soluong*25000&ndash;&gt;-->
-<!--&lt;!&ndash;            alert("Cam vắt"+ "Giá tiền là:"+ b);&ndash;&gt;-->
-<!--&lt;!&ndash;            break;&ndash;&gt;-->
-<!--&lt;!&ndash;        }case 3 :{&ndash;&gt;-->
-<!--&lt;!&ndash;            let c= soluong*35000&ndash;&gt;-->
-<!--&lt;!&ndash;            alert("Nước ép cà rốt"+ "Giá tiền là:"+ c);&ndash;&gt;-->
-<!--&lt;!&ndash;            break;&ndash;&gt;-->
-<!--&lt;!&ndash;        }case 4 :{&ndash;&gt;-->
-<!--&lt;!&ndash;            let giatien= soluong*15000&ndash;&gt;-->
-<!--&lt;!&ndash;            alert("Nước ép cà chua"+ "Giá tiền là:"+ giatien);&ndash;&gt;-->
-<!--&lt;!&ndash;            break;&ndash;&gt;-->
-<!--&lt;!&ndash;        }case 5 :{&ndash;&gt;-->
-<!--&lt;!&ndash;            let d= soluong*15000&ndash;&gt;-->
-<!--&lt;!&ndash;            alert("Nước lọc"+ "Giá tiền là:"+ d);&ndash;&gt;-->
-<!--&lt;!&ndash;            break;&ndash;&gt;-->
-<!--&lt;!&ndash;        }case 6:{&ndash;&gt;-->
-<!--&lt;!&ndash;            let z = soluong*24000&ndash;&gt;-->
-<!--&lt;!&ndash;            alert("Nước dừa " + "Giá tiền là:" + z);&ndash;&gt;-->
-<!--&lt;!&ndash;            break;&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
+    let goimon = +prompt("Mời nhập số nước cần gọi")
+    let soluong = +prompt("Mời nhập ố lượng")
+    switch (goimon) {
+        case 1 :{
+            let a= soluong*15000
+            alert("Cafe"+ "Giá tiền là:"+ a);
+            break;
+        }case 2 :{
+            let b= soluong*25000
+            alert("Cam vắt"+ "Giá tiền là:"+ b);
+            break;
+        }case 3 :{
+            let c= soluong*35000
+            alert("Nước ép cà rốt"+ "Giá tiền là:"+ c);
+            break;
+        }case 4 :{
+            let giatien= soluong*15000
+            alert("Nước ép cà chua"+ "Giá tiền là:"+ giatien);
+            break;
+        }case 5 :{
+            let d= soluong*15000
+            alert("Nước lọc"+ "Giá tiền là:"+ d);
+            break;
+        }case 6:{
+            let z = soluong*24000
+            alert("Nước dừa " + "Giá tiền là:" + z);
+            break;
+        }
 
-<!--    }-->
-<!--</script>-->
+    }
+    }
+</script>
 </body>
 </html>
