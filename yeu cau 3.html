@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu cau 3</title>
+</head>
+<body>
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;  // yeu cau 3&ndash;&gt;&ndash;&gt;-->
+<!--  &lt;!&ndash;    // Bai 1&ndash;&gt;-->
+<!--  &lt;!&ndash;    //   let k = +prompt("Mời nhập độ dài của mảng");&ndash;&gt;-->
+<!--  &lt;!&ndash;    //   let sum = 0;&ndash;&gt;-->
+<!--  &lt;!&ndash;    // let a =[];&ndash;&gt;-->
+<!--  &lt;!&ndash;    // let b =[];&ndash;&gt;-->
+<!--  &lt;!&ndash;    // for (let i = 0; i <k ; i++) {&ndash;&gt;-->
+<!--  &lt;!&ndash;    //   a[i] = +prompt("Mời nhập giá trị của mảng a")&ndash;&gt;-->
+<!--  &lt;!&ndash;    //&ndash;&gt;-->
+<!--  &lt;!&ndash;    // }&ndash;&gt;-->
+<!--  &lt;!&ndash;    //   for (let i = 0; i <k ; i++) {&ndash;&gt;-->
+<!--  &lt;!&ndash;    //       sum= sum +a[i];&ndash;&gt;-->
+<!--  &lt;!&ndash;    //       b[i]=sum;&ndash;&gt;-->
+<!--  &lt;!&ndash;    //   }document.write("mảng a là:" + a);&ndash;&gt;-->
+<!--  &lt;!&ndash;    //   document.write("mảng b là:" + b);&ndash;&gt;-->
+
+<!--  &lt;!&ndash;    // Bai 2&ndash;&gt;-->
+<!--  &lt;!&ndash;    // let arrA=[7,2,5,3,5,3];&ndash;&gt;-->
+<!--  &lt;!&ndash;// let arrB=[7,2,5,4,6,3,5,3];&ndash;&gt;-->
+<!--  // // &lt;!&ndash;// let n=+prompt("Nhập độ dài của A :");&ndash;&gt;-->
+<!--  // // &lt;!&ndash;// for (let i = 0; i < n; i++) {&ndash;&gt;-->
+<!--  // // &lt;!&ndash;//     arrA[i]=+prompt("Nhập mảng A :");&ndash;&gt;-->
+<!--  // // &lt;!&ndash;// }&ndash;&gt;-->
+<!--  // // &lt;!&ndash;// let m=+prompt("Nhập Độ dài của mảng B")&ndash;&gt;-->
+<!--  // // &lt;!&ndash;// for (let i = 0; i < m; i++) {&ndash;&gt;-->
+<!--  // // &lt;!&ndash;//     arrB[i]=+prompt("Nhập mảngB:");&ndash;&gt;-->
+<!--  // // &lt;!&ndash;// }&ndash;&gt;-->
+<!--  &lt;!&ndash;// for (let i = 0; i < arrB.length; i++) {&ndash;&gt;-->
+<!--  &lt;!&ndash;// if(arrA.indexOf(arrB[i])==-1)&ndash;&gt;-->
+<!--  &lt;!&ndash;// {&ndash;&gt;-->
+<!--  &lt;!&ndash;// document.write(arrB[i]);&ndash;&gt;-->
+<!--  &lt;!&ndash;// }&ndash;&gt;-->
+<!--  &lt;!&ndash;// }&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--&lt;!&ndash;<form>&ndash;&gt;-->
+<!--&lt;!&ndash;    <fieldset style="width: 140px" >&ndash;&gt;-->
+<!--&lt;!&ndash;        <legend><h>MENU</h></legend>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose()">1.Cafe</button><br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose2()">2.Cam vắt</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose3()">3.Nước ép cà rốt</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose4()">4.Nước ép cà chua</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose5()">5.Nước lọc</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose6()">6.Nước dừa</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button onclick="choose7()">7.Thoát gọi món</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p id="result"></p>&ndash;&gt;-->
+<!--&lt;!&ndash;    </fieldset>&ndash;&gt;-->
+<!--// Bai 3-->
+<!--<script>-->
+<!--    let tuSo=[8,3,9];-->
+<!--    let mauSo=[6,3,4];-->
+<!--    let viTri;-->
+<!--    let max = tuSo[0]/mauSo[0];-->
+
+<!--    for (let i = 0; i <tuSo.length ; i++) {-->
+
+<!--        if (max<tuSo[i]/mauSo[i]){-->
+<!--            max = tuSo[i]/mauSo[i]-->
+<!--            viTri = i;-->
+<!--        }-->
+
+<!--    }document.write("Phân số lớn nhất là:" + max  +" Tại vị trí: " +viTri)-->
+<!--</script>-->
+<!--// Bai 4-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    let goimon = +prompt("Mời nhập số nước cần gọi")&ndash;&gt;-->
+<!--&lt;!&ndash;    let soluong = +prompt("Mời nhập ố lượng")&ndash;&gt;-->
+<!--&lt;!&ndash;    switch (goimon) {&ndash;&gt;-->
+<!--&lt;!&ndash;        case 1 :{&ndash;&gt;-->
+<!--&lt;!&ndash;            let a= soluong*15000&ndash;&gt;-->
+<!--&lt;!&ndash;            alert("Cafe"+ "Giá tiền là:"+ a);&ndash;&gt;-->
+<!--&lt;!&ndash;            break;&ndash;&gt;-->
+<!--&lt;!&ndash;        }case 2 :{&ndash;&gt;-->
+<!--&lt;!&ndash;            let b= soluong*25000&ndash;&gt;-->
+<!--&lt;!&ndash;            alert("Cam vắt"+ "Giá tiền là:"+ b);&ndash;&gt;-->
+<!--&lt;!&ndash;            break;&ndash;&gt;-->
+<!--&lt;!&ndash;        }case 3 :{&ndash;&gt;-->
+<!--&lt;!&ndash;            let c= soluong*35000&ndash;&gt;-->
+<!--&lt;!&ndash;            alert("Nước ép cà rốt"+ "Giá tiền là:"+ c);&ndash;&gt;-->
+<!--&lt;!&ndash;            break;&ndash;&gt;-->
+<!--&lt;!&ndash;        }case 4 :{&ndash;&gt;-->
+<!--&lt;!&ndash;            let giatien= soluong*15000&ndash;&gt;-->
+<!--&lt;!&ndash;            alert("Nước ép cà chua"+ "Giá tiền là:"+ giatien);&ndash;&gt;-->
+<!--&lt;!&ndash;            break;&ndash;&gt;-->
+<!--&lt;!&ndash;        }case 5 :{&ndash;&gt;-->
+<!--&lt;!&ndash;            let d= soluong*15000&ndash;&gt;-->
+<!--&lt;!&ndash;            alert("Nước lọc"+ "Giá tiền là:"+ d);&ndash;&gt;-->
+<!--&lt;!&ndash;            break;&ndash;&gt;-->
+<!--&lt;!&ndash;        }case 6:{&ndash;&gt;-->
+<!--&lt;!&ndash;            let z = soluong*24000&ndash;&gt;-->
+<!--&lt;!&ndash;            alert("Nước dừa " + "Giá tiền là:" + z);&ndash;&gt;-->
+<!--&lt;!&ndash;            break;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--    }-->
+<!--</script>-->
+</body>
+</html>
